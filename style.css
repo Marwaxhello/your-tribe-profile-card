@@ -1,0 +1,98 @@
+body{
+  height: 100vh;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: black;
+  background-color: rgb(116, 168, 221);
+
+}
+
+article {
+    width:50vw;
+    max-width: 25em;
+    min-width:20em;
+    height: 61%;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    justify-content:flex-end;
+    position: relative;
+    transition:.25s;
+
+  }
+  
+  img {
+    width:50vw;
+    max-width: 22em;
+    min-width:8em;
+    flex-direction:column;
+    align-items:center;
+    justify-content:flex-end;
+    box-shadow:0 0 20px 20px rgba(0,0,0,.1);
+    position: relative;
+    transition:.25s;
+    margin-top: 2.1em;
+ 
+  }
+
+  /* h1{
+    margin-top: 1.5em;
+    margin-left: 4em;
+    position: absolute;
+  } */
+
+  .flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+  }
+
+  .flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+  }
+
+
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden; /* Safari */
+  backface-visibility: hidden;
+}
+
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  box-shadow:0 0 20px 20px rgba(0,0,0,.1);
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden; /* Safari */
+  backface-visibility: hidden;
+}
+
+/* Style the front side (fallback if image is missing) */
+.flip-card-front {
+  background-color: rgb(255, 255, 255);
+  color: black;
+}
+
+/* Style the back side */
+.flip-card-back {
+  background-color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
+  transform: rotateY(180deg);
+  background-image: url(./../IMG/underwater.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  opacity: 100%;
+}
+
+.streepje{
+  border: 1px solid black;
+  width: 1em;
+ margin-left: 12em;
+}

@@ -23,8 +23,8 @@ article {
   flex-direction:column;
   align-items:center;
   justify-content:flex-end;
-  background: rgb(146, 97, 206);
-  background: linear-gradient(0deg, rgb(121, 82, 143) 40%, #c6c7de 100%);
+  background: rgb(223, 110, 176);
+  background: linear-gradient(0deg, rgb(226, 101, 185) 40%, #eaadea 100%);
   box-shadow:0 0 20px 20px rgba(0,0,0,.1);
   border-radius:1rem;
   position: relative;
